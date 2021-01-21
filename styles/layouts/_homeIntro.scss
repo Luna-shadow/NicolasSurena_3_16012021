@@ -1,0 +1,25 @@
+.homeIntro{
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: darken($w, 5);
+    &_location{
+        margin-bottom: 2.5rem;
+        padding: 1rem 0;
+        background-color: darken($w, 8);
+        color: lighten($b, 20);    
+        font-weight: 600;
+        &_icone{
+            margin-right: 1rem;
+        }
+    }
+    &_title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1.5rem 2rem;
+    }
+    &_catchphrase{
+        padding: 0 1rem;
+        color: lighten($b, 50);    
+
+    }
+}
