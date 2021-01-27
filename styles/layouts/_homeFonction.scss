@@ -1,0 +1,47 @@
+.fonction{
+    padding: 1.5rem 1.5rem;
+    &_title{
+        text-align: left;
+        margin: 1rem 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    &_info{
+        padding: 1.3rem 0 1.3rem 2rem;
+        position: relative;
+        margin: 1rem 0 1rem 0.5rem;
+        background-color: darken($w, 5);
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 0.5rem darken($w, 15);
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        &_number{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            right: 95%;
+            top: 1rem;
+            background-color: $primColor;
+            color: $w;
+            font-size: 0.8rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        &_title{
+            font-weight: 600;
+        }
+        &_icone{
+            color: lighten($b, 40);
+            font-size: 1.3rem;
+            margin-right: 2rem;
+        }
+    }
+}

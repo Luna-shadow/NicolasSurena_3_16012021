@@ -43,6 +43,11 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -73,13 +78,34 @@ main {
   font-family: 'Shrikhand', cursive, 'sans-serif';
 }
 
-.homeIntro {
+.footer {
+  padding: 1.5rem;
+  background-color: #404040;
+  color: #ffffff;
+}
+
+.footer_title {
+  margin-bottom: 1rem;
+  font-family: 'Shrikhand', cursive, 'sans-serif';
+  font-size: 1.2rem;
+}
+
+.footer_link {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.footer_icone {
+  margin-right: 0.5rem;
+}
+
+.intro {
   padding-bottom: 2rem;
   text-align: center;
   background-color: #f2f2f2;
 }
 
-.homeIntro_location {
+.intro_location {
   margin-bottom: 2.5rem;
   padding: 1rem 0;
   background-color: #ebebeb;
@@ -87,19 +113,199 @@ main {
   font-weight: 600;
 }
 
-.homeIntro_location_icone {
+.intro_location_icone {
   margin-right: 1rem;
 }
 
-.homeIntro_title {
+.intro_title {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1.5rem 2rem;
 }
 
-.homeIntro_catchphrase {
+.intro_catchphrase {
   padding: 0 1rem;
   color: gray;
+}
+
+.fonction {
+  padding: 1.5rem 1.5rem;
+}
+
+.fonction_title {
+  text-align: left;
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.fonction_info {
+  padding: 1.3rem 0 1.3rem 2rem;
+  position: relative;
+  margin: 1rem 0 1rem 0.5rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem #d9d9d9;
+          box-shadow: 0 0.5rem 0.5rem #d9d9d9;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.fonction_info_number {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  right: 95%;
+  top: 1rem;
+  background-color: #9256dc;
+  color: #ffffff;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.fonction_info_title {
+  font-weight: 600;
+}
+
+.fonction_info_icone {
+  color: #666666;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+}
+
+.restaurantArea {
+  background-color: #f2f2f2;
+  padding: 1.5rem 1.5rem;
+}
+
+.restaurantArea_title {
+  text-align: left;
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.restaurantArea_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15rem;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 0.5rem 0.5rem #d9d9d9;
+          box-shadow: 0 0.5rem 0.5rem #d9d9d9;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.restaurant_novelty {
+  margin: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #98e2cf;
+  color: #2c9c7f;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.restaurant_novelty--hide {
+  visibility: hidden;
+}
+
+.restaurant_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-border-radius: 0 0 1rem 1rem;
+  -moz-border-radius: 0 0 1rem 1rem;
+  -ms-border-radius: 0 0 1rem 1rem;
+  -o-border-radius: 0 0 1rem 1rem;
+}
+
+.restaurant_title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant_location {
+  font-weight: 300;
+}
+
+.restaurant_icone {
+  font-size: 1.2rem;
+}
+
+.restaurant_icone--selected {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff79da));
+  background: linear-gradient(#9256dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #9256dc;
+}
+
+.restaurant_menilmontant {
+  background-image: url("../medias/restaurants/menilmontant.jpg");
+}
+
+.restaurant_charonne {
+  background-image: url("../medias/restaurants/charonne.jpg");
+}
+
+.restaurant_citeRouge {
+  background-image: url("../medias/restaurants/citeRouge.jpg");
+}
+
+.restaurant_folieMericourt {
+  background-image: url("../medias/restaurants/folieMericourt.jpg");
 }
 
 .button {

@@ -1,0 +1,17 @@
+.footer{
+    padding: 1.5rem;
+    background-color: lighten($b,25);
+    color: $w;
+    &_title{
+        margin-bottom: 1rem;
+        font-family: 'Shrikhand', cursive, 'sans-serif';  
+        font-size: 1.2rem;
+    }
+    &_link{
+        display: block;
+        margin: 0.5rem 0;
+    }
+    &_icone{
+        margin-right: 0.5rem;
+    }
+}

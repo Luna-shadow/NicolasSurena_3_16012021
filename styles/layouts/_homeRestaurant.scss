@@ -1,0 +1,89 @@
+.restaurantArea{
+    background-color: darken($w, 5);
+    padding: 1.5rem 1.5rem;
+    &_title{
+        text-align: left;
+        margin: 1rem 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    &_restaurant{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 15rem;
+        margin: 1rem 0;
+        background-color: $w;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0.5rem 0.5rem darken($w, 15);
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+
+}
+.restaurant{
+    &_novelty{
+        margin: 1rem;
+        padding: 0.4rem 0.8rem;
+        background-color: $terColor;
+        color: darken($terColor, 35);
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+        &--hide{
+            visibility: hidden;
+        }
+    }
+    &_content{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+        background-color: $w;
+        border-radius:0 0 1rem 1rem;
+        -webkit-border-radius:0 0 1rem 1rem;
+        -moz-border-radius:0 0 1rem 1rem;
+        -ms-border-radius:0 0 1rem 1rem;
+        -o-border-radius:0 0 1rem 1rem;
+    }
+    &_title{
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    &_location{
+        font-weight: 300;
+    }
+    &_icone{
+        font-size: 1.2rem;
+        &--selected{
+            background: linear-gradient($primColor, $secColor);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: $primColor;
+        }
+    }
+    &_menilmontant{
+        background-image: url('../medias/restaurants/menilmontant.jpg');
+    }
+    &_charonne{
+        background-image: url('../medias/restaurants/charonne.jpg');
+    }
+    &_citeRouge{
+        background-image: url('../medias/restaurants/citeRouge.jpg');
+    }
+    &_folieMericourt{
+        background-image: url('../medias/restaurants/folieMericourt.jpg');
+    }
+}

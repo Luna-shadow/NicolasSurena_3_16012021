@@ -1,4 +1,4 @@
-.homeIntro{
+.intro{
     padding-bottom: 2rem;
     text-align: center;
     background-color: darken($w, 5);
@@ -19,7 +19,6 @@
     }
     &_catchphrase{
         padding: 0 1rem;
-        color: lighten($b, 50);    
-
+        color: lighten($b, 50); 
     }
 }
