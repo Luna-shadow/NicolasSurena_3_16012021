@@ -1,0 +1,22 @@
+@media screen and (min-width: $tabSize){
+    .main--home{
+        display: grid;
+        grid-template-columns: 50% 50%;;
+        grid-template-areas: 
+        "intro fonction"
+        "restaurantArea restaurantArea"
+        "footer footer";
+        .intro{
+            grid-area: intro;
+        }
+        .fonction{
+            grid-area: fonction;
+        }
+        .restaurantArea{
+            grid-area: restaurantArea;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    }
+}

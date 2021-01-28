@@ -87,3 +87,16 @@
         background-image: url('../medias/restaurants/folieMericourt.jpg');
     }
 }
+@media screen and (min-width: $tabSize){
+    .restaurantArea{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1rem;
+        &_title{
+            grid-area: 1/1/1/3;
+        }
+        &_restaurant{
+            margin: initial;
+        }
+    }
+}
