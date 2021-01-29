@@ -7,18 +7,18 @@
 'bases/reset',
 'bases/base';
 
-//pages
+// pages
 @import
 'pages/home';
 
 // layouts
 @import
-// --header
-'layouts/header',
+// --nav
+'layouts/nav',
 // --footer
 'layouts/footer',
-// --homeSection
-'layouts/homeIntro',
+// --homeHeader
+'layouts/homeHeader',
 // --homeFonction
 'layouts/homeFonction',
 // --homeRestaurant

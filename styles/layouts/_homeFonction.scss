@@ -45,3 +45,14 @@
         }
     }
 }
+@media screen and (min-width: $tabSize) and (max-width: $desktopSize){
+    .fonction{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 2rem;
+        &_title{
+           grid-column: 1/4; 
+        }
+        
+    }
+}
