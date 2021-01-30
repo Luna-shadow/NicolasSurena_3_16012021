@@ -7,9 +7,12 @@
         font-weight: 600;
     }
     &_info{
-        padding: 1.3rem 0 1.3rem 2rem;
+        display: flex;
+        align-items: center;
+        max-width: 30rem;     
+        padding: 1.3rem 1rem 1.3rem 2rem;
         position: relative;
-        margin: 1rem 0 1rem 0.5rem;
+        margin: 1rem auto;
         background-color: darken($w, 5);
         border-radius: 1rem;
         box-shadow: 0 0.5rem 0.5rem darken($w, 15);
@@ -36,6 +39,9 @@
             -o-border-radius: 50%;
         }
         &_title{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
             font-weight: 600;
         }
         &_icone{

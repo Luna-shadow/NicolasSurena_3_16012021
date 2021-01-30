@@ -90,14 +90,28 @@
 @media screen and (min-width: $tabSize){
     .restaurantArea{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(10, 1fr);
         grid-gap: 1rem;
         background-color: $w;
         &_title{
-            grid-area: 1/1/1/3;
+            grid-area: 1/1/1/11;
         }
         &_restaurant{
             margin: initial;
+        }
+    }
+    .restaurant{
+        &_menilmontant{
+            grid-area: 2/1/3/7;
+        }
+        &_charonne{
+            grid-area: 2/7/3/11;
+        }
+        &_citeRouge{
+            grid-area: 3/1/4/5;
+        }
+        &_folieMericourt{
+            grid-area: 3/5/4/11;
         }
     }
 }

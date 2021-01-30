@@ -1,0 +1,15 @@
+.header{
+   &--menu{
+        position: fixed;
+        height: 20rem;
+        width: 100%;
+        z-index: -1;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 120%;
+   }
+   &--citeRouge{
+       background-image: url("../medias/restaurants/citeRouge.jpg");
+   }
+}

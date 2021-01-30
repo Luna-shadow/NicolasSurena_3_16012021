@@ -9,7 +9,8 @@
 
 // pages
 @import
-'pages/home';
+'pages/home',
+'pages/menu';
 
 // layouts
 @import
@@ -17,12 +18,14 @@
 'layouts/nav',
 // --footer
 'layouts/footer',
-// --homeHeader
+// --Headers
 'layouts/homeHeader',
-// --homeFonction
+'layouts/restaurantHeader',
+// --home
 'layouts/homeFonction',
-// --homeRestaurant
-'layouts/homeRestaurant';
+'layouts/homeRestaurant',
+// --restaurant
+'layouts/restaurantMenu';
 
 // components
 @import

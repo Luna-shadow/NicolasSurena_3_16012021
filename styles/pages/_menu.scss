@@ -1,0 +1,41 @@
+.main{
+    &--restaurant{
+        padding: 1rem 1.5rem;
+        margin-top: 12rem;
+        background-color: darken($w, 5);
+        border-radius: 2rem 2rem 0 0;
+        -webkit-border-radius: 2rem 2rem 0 0;
+        -moz-border-radius: 2rem 2rem 0 0;
+        -ms-border-radius: 2rem 2rem 0 0;
+        -o-border-radius: 2rem 2rem 0 0;
+    }
+}
+// @media screen and (min-width: $desktopSize){
+//     .body{
+//         &--home{
+//             display: grid;
+//             grid-template-columns: 2fr 1fr;
+//             grid-template-rows: auto;
+//             grid-template-areas: 
+//             "nav nav"
+//             "header header"
+//             "restaurantArea fonction"
+//             "footer footer";
+//             .nav{
+//                 grid-area: nav;
+//             }
+//             .header{
+//                 grid-area: header;
+//             }
+//             .fonction{
+//                 grid-area: fonction;
+//             }
+//             .restaurantArea{
+//                 grid-area: restaurantArea;
+//             }
+//             .footer{
+//                 grid-area: footer;
+//             }
+//         }
+//     }
+// }
