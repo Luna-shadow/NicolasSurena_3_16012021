@@ -12,4 +12,21 @@
    &--citeRouge{
        background-image: url("../medias/restaurants/citeRouge.jpg");
    }
+   &--melimontant{
+    background-image: url("../medias/restaurants/melimontant.jpg");
+    }
+    &--charonne{
+        background-image: url("../medias/restaurants/charonne.jpg");
+    }
+    &--folieMericourt{
+        background-image: url("../medias/restaurants/folieMericourt.jpg");
+    }
+}
+@media screen and(min-width: $desktopSize){
+    .header{
+        &--menu{
+            background-size: cover;
+            background-position: initial;
+        }
+    }
 }
