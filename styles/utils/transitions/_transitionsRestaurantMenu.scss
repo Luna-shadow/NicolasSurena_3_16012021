@@ -1,0 +1,67 @@
+.dish{
+    &_title{
+        transition: letter-spacing 0.5s;
+        -webkit-transition: letter-spacing 0.5s;
+        -moz-transition: letter-spacing 0.5s;
+        -ms-transition: letter-spacing 0.5s;
+        -o-transition: letter-spacing 0.5s;
+}
+    &_checkArea{
+        &_check{           
+            transition: transform 0.5s;
+            -webkit-transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+            -ms-transition: transform 0.5s;
+            -o-transition: transform 0.5s;
+        }       
+    }
+    &:hover{ 
+        grid-template-columns: 1rem auto auto 1rem 5rem; 
+        .dish{
+            &_checkArea{
+                &_check{
+                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                }
+            }
+            &_title{
+                letter-spacing: -0.05rem;
+            }
+        }
+    }
+    transition: grid-template-columns 0.5s;
+    -webkit-transition: grid-template-columns 0.5s;
+    -moz-transition: grid-template-columns 0.5s;
+    -ms-transition: grid-template-columns 0.5s;
+    -o-transition: grid-template-columns 0.5s;
+}
+@media screen and (min-width: $tabSize){
+    .dish{
+        &_title{
+    }
+        &_checkArea{
+            &_check{           
+            }       
+        }
+        &:hover{ 
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto 5rem;
+            .dish{
+                &_checkArea{
+                    &_check{
+                    }
+                }
+                &_title{
+                }
+            }
+        }
+        transition: grid-template-rows 0.5s;
+        -webkit-transition: grid-template-rows 0.5s;
+        -moz-transition: grid-template-rows 0.5s;
+        -ms-transition: grid-template-rows 0.5s;
+        -o-transition: grid-template-rows 0.5s;
+    }
+}

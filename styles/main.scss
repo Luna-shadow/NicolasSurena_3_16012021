@@ -1,33 +1,35 @@
-// utils
 @import
-'utils/variable';
+//======================|[variables]|
+'utils/variables',
 
-// bases
-@import
+//======================|[bases]|
 'bases/reset',
-'bases/base';
+'bases/base',
 
-// pages
-@import
+//======================|[pages]|
 'pages/home',
-'pages/menu';
+'pages/restaurants',
 
-// layouts
-@import
+//======================|[layouts]|
 // --nav
 'layouts/nav',
 // --footer
 'layouts/footer',
-// --Headers
+// --headers
 'layouts/homeHeader',
 'layouts/restaurantHeader',
 // --home
-'layouts/homeFonction',
+'layouts/homeFunction',
 'layouts/homeRestaurant',
 // --restaurant
-'layouts/restaurantMenu';
+'layouts/restaurantMenu',
 
-// components
-@import
+
+//======================|[components]|
 'components/button',
-'components/loader';
+'components/dish',
+// 'components/loader',
+
+//======================|[animations - transitions]|
+'utils/animations',
+'utils/transitions';

@@ -1,0 +1,78 @@
+.restaurant{
+    &_icone{
+        &:hover{
+            background: linear-gradient($primColor, $secColor);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: $primColor;
+        }
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+       
+    }
+}
+@media screen and (min-width: $tabSize){
+    .restaurantArea{
+        &_restaurant{
+            &:hover{
+                background-size: 150% auto;
+                & .restaurant{
+                    &_novelty{
+                        max-height: 0;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    &_content{
+                        background-color: $wo;       
+                        color: $w;   
+                        font-size: 1.2rem;  
+                        padding-bottom: 10rem;     
+                    } 
+                    &_title,
+                    &_location{
+                        &::before{
+                            opacity: 0.9;
+                        }
+                    }
+                    &_icone{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            transition: background-size 0.5s;
+            -webkit-transition: background-size 0.5s;
+            -moz-transition: background-size 0.5s;
+            -ms-transition: background-size 0.5s;
+            -o-transition: background-size 0.5s;
+        }
+        & .restaurant{
+            &_content{
+                transition: background-color 0.4s, padding-bottom 0.4s, color 0.3s, font-size 0.3s;
+                -webkit-transition: background-color 0.4s, padding-bottom 0.4s, color 0.3s, font-size 0.3s;
+                -moz-transition: background-color 0.4s, padding-bottom 0.4s, color 0.3s, font-size 0.3s;
+                -ms-transition: background-color 0.4s, padding-bottom 0.4s, color 0.3s, font-size 0.3s;
+                -o-transition: background-color 0.4s, padding-bottom 0.4s, color 0.3s, font-size 0.3s;
+            }
+            &_novelty{
+                transition: max-height 0.2s, padding 0.2s, margin 0.2s;
+                -webkit-transition: max-height 0.2s, padding 0.2s, margin 0.2s;
+                -moz-transition: max-height 0.2s, padding 0.2s, margin 0.2s;
+                -ms-transition: max-height 0.2s, padding 0.2s, margin 0.2s;
+                -o-transition: max-height 0.2s, padding 0.2s, margin 0.2s;
+            }
+            &_title,
+            &_location{
+                &::before{
+                    transition: opacity 0.3s;
+                    -webkit-transition: opacity 0.3s;
+                    -moz-transition: opacity 0.3s;
+                    -ms-transition: opacity 0.3s;
+                    -o-transition: opacity 0.3s;
+}
+            }
+        }
+    }
+}

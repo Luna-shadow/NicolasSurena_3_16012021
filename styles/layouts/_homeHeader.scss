@@ -24,3 +24,32 @@
         }
     }
 }
+@media screen and (min-width: $desktopSize){
+    .header{
+        &--home{
+            display: grid;
+            grid-template-areas: 
+            "title location"
+            "catchphrase location"
+            "button location";
+            grid-template-columns: auto 20rem ;
+            padding-bottom: initial;
+        }
+        &_title{
+            grid-area: title;
+        }
+        &_catchphrase{
+            grid-area: catchphrase;
+            margin: initial;
+        }
+        &_location{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: location;
+            height: 15rem;
+            margin-bottom: initial;                   
+            font-weight: 500;
+        }
+    }
+}

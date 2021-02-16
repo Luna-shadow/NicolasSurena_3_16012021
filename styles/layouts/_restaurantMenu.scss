@@ -1,8 +1,11 @@
+// Menu global
 .menu{
     &_title{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 40rem;
+        margin: 0 auto;
         font-family: 'Shrikhand', cursive, 'sans-serif'; 
         font-size: 2rem;
     }
@@ -11,137 +14,22 @@
         margin: 2rem 0;
     }
 }
+// Zone plats
 .dishArea{
     &_title{
         font-size: 1.2rem;
         font-weight: 300;
         text-transform: uppercase;
+        margin-top: 3rem;
     }
     &_hr{
+        justify-self: start;
         border: initial;
         display: inline-block;
         height: 0.15rem;
         width: 3rem;            
         background-color: $terColor;
     }
-}
-.dish{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 5rem;
-    margin: 1rem 0;
-    background-color: $w;
-    box-shadow: 0 0.5rem 0.5rem darken($w, 15);
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    &_content{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        transition: width 0.5s;
-        -webkit-transition: width 0.5s;
-        -moz-transition: width 0.5s;
-        -ms-transition: width 0.5s;
-        -o-transition: width 0.5s;
-    }
-    &_title{
-        display: block;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        font-size: 1.2rem;
-        font-weight: 600;
-        width: 100%;
-        margin: 1rem 0 0.5rem 1rem;
-}
-    &_recipe{
-        display: block;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        flex: 1;
-        font-weight: 300;
-        margin: 0 0 1rem 1rem;
-        transition: width 0.5s;
-        -webkit-transition: width 0.5s;
-        -moz-transition: width 0.5s;
-        -ms-transition: width 0.5s;
-        -o-transition: width 0.5s;
-    }
-    &_price{
-        display: inline-block;
-        font-weight: 600;
-        margin: 0 1rem 1rem 0;
-        overflow: hidden;
-        width: 2rem;
-    }
-    &_checkArea{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 0;
-        overflow-x: hidden;
-        background-color: $terColor;
-        border-radius: 0 1rem 1rem 0;
-        -webkit-border-radius: 0 1rem 1rem 0;
-        -moz-border-radius: 0 1rem 1rem 0;
-        -ms-border-radius: 0 1rem 1rem 0;
-        -o-border-radius: 0 1rem 1rem 0;
-        transition: width 0.5s, transform 0.5s;
-        -webkit-transition: width 0.5s, transform 0.5s;
-        -moz-transition: width 0.5s, transform 0.5s;
-        -ms-transition: width 0.5s, transform 0.5s;
-        -o-transition: width 0.5s, transform 0.5s;
-        &_check{
-            color: $w;
-            font-size: 1.5rem;
-            transition: transform 0.5s;
-            -webkit-transition: transform 0.5s;
-            -moz-transition: transform 0.5s;
-            -ms-transition: transform 0.5s;
-            -o-transition: transform 0.5s;
-        }
-        transition: width 0.5s;
-        -webkit-transition: width 0.5s;
-        -moz-transition: width 0.5s;
-        -ms-transition: width 0.5s;
-        -o-transition: width 0.5s;
-}
-    &:hover{  
-        box-shadow: 0 0.5rem 1rem darken($w, 50);     
-        .dish_content{
-            width: 80%;
-        }
-        .dish_checkArea{
-            width: 4rem;
-        } 
-        & .dish_checkArea_check{
-            transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-            -moz-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-        }
-
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-}
-    transition: transform 0.2s, box-shadow 0.2s;
-    -webkit-transition: transform 0.2s, box-shadow 0.2s;
-    -moz-transition: transform 0.2s, box-shadow 0.2s;
-    -ms-transition: transform 0.2s, box-shadow 0.2s;
-    -o-transition: transform 0.2s, box-shadow 0.2s;
 }
 @media screen and (min-width: $tabSize){
     .dishArea{
@@ -158,37 +46,9 @@
             width: 10rem; 
         }
     }
-    .dish{
-        margin: initial;
-        height: 7rem;
-    }
 }
 @media screen and (min-width: $desktopSize){
-    .main{
-        display: grid;
-        grid-gap: 0 5rem;
-        grid-template-columns:  1fr 50rem 1fr;
-        grid-template-areas:         
-        " asideL title asideR "
-        " asideL dish1 asideR "
-        " asideL dish2 asideR "
-        " asideL dish3 asideR "
-        " asideL button asideR ";
-        padding: 0 0;
-        &::before{
-            content: "";
-            grid-area: asideL;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-}
-        &::after{
-            content: "";
-            grid-area: asideR;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-}
+    .main{       
         &--folieMericourt{            
             &::before{
                 background-image: url("../medias/restaurants/folieMericourt.jpg");
@@ -223,7 +83,7 @@
         }
     }
     .menu_title{
-        margin-top: 5rem;
+        margin-top: initial;
         grid-area: title;
     }
     .dishArea{
