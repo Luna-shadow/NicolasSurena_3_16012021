@@ -69,11 +69,11 @@
         -moz-transform: scale(0, 1);
         -ms-transform: scale(0, 1);
         -o-transform: scale(0, 1);
-        animation: 'apparition' 3s forwards;
-        -webkit-animation: 'apparition' 3s forwards;
+        animation: 'apparition' 1s forwards;
+        -webkit-animation: 'apparition' 1s forwards;
 }
-    animation: 'translate' 5s forwards;
-    -webkit-animation: 'translate' 5s forwards;
+    animation: 'translate' 2s forwards;
+    -webkit-animation: 'translate' 2s forwards;
 }
 .restaurant{
     &_novelty{

@@ -112,8 +112,8 @@ body {
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
-    animation: 'construction' 5s forwards;
-    -webkit-animation: 'construction' 5s forwards;
+    animation: 'construction' 2s forwards;
+    -webkit-animation: 'construction' 2s forwards;
   }
   .mainWrapper--home .nav {
     -ms-grid-row: 1;
@@ -476,8 +476,8 @@ body {
 .restaurantArea {
   background-color: #f2f2f2;
   padding: 1.5rem 1.5rem;
-  animation: 'translate' 5s forwards;
-  -webkit-animation: 'translate' 5s forwards;
+  animation: 'translate' 2s forwards;
+  -webkit-animation: 'translate' 2s forwards;
 }
 
 .restaurantArea_title {
@@ -524,8 +524,8 @@ body {
   -moz-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
   -o-transform: scale(0, 1);
-  animation: 'apparition' 3s forwards;
-  -webkit-animation: 'apparition' 3s forwards;
+  animation: 'apparition' 1s forwards;
+  -webkit-animation: 'apparition' 1s forwards;
 }
 
 .restaurant_novelty {
