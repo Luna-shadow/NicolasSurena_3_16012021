@@ -61,50 +61,68 @@
 @media screen and (min-width: $tabSize){
     .dish{
         grid-template-columns: auto auto;
-        grid-template-rows: auto auto 0;
+        grid-template-rows: 50% 20% auto 0;
         grid-template-areas:
         "title title"
-        "recipe price"
+        "recipe recipe"
+        "price price"
         "checkArea checkArea";
+        border-bottom: 0.2rem solid $primColor;
+        height: 14rem;
         margin: initial;
-        height: 15rem;
         &_title{
             grid-area: title;
-            font-size: 2rem;
-            font-weight: 100;
-        }
+            word-wrap: none;
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            -moz-text-decoration-style: dotted;
+            text-decoration-thickness: 0.1rem;
+            text-decoration-color: $primColor;
+            -moz-text-decoration-color: $primColor;
+}
         &_recipe{
-            grid-area: recipe;
-            display: block;
-            flex: 1;
+            overflow: initial;
+            margin-left: 2.4rem;
+            padding: 0.25rem 2rem 0.25rem 0;
+            position: relative;
+            white-space: initial;
+            z-index: 1;
+            font-size: 1.2rem;
             font-weight: 300;
+            &::before{
+                content:'►';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top:0;
+                bottom:0;
+                left:  -1.5rem;
+                z-index: -1;
+                color: $terColor;
+            }
         }
         &_price{
-            grid-area: price;
             justify-self: end;
-            font-weight: 600;
-            overflow: hidden;
-            width: 2rem;
+            margin: 1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-style: italic;
         }
         &_checkArea{
-            grid-area: checkArea;
-            align-self: stretch;
-            justify-self: stretch;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow-x: hidden;
-            width: 100%;
-            background-color: $terColor;
-            border-radius: 0 1rem 1rem 0;
-            -webkit-border-radius: 0 1rem 1rem 0;
-            -moz-border-radius: 0 1rem 1rem 0;
-            -ms-border-radius: 0 1rem 1rem 0;
-            -o-border-radius: 0 1rem 1rem 0;       
+            overflow: hidden;
             &_check{
-                color: $w;
-                font-size: 1.5rem;
-            }      
+            }  
+            border-radius: 0 0 1rem 1rem;
+            -webkit-border-radius: 0 0 1rem 1rem;
+            -moz-border-radius: 0 0 1rem 1rem;
+            -ms-border-radius: 0 0 1rem 1rem;
+            -o-border-radius: 0 0 1rem 1rem;    
         }
     }
 }
