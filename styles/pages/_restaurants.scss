@@ -1,6 +1,13 @@
+.mainWrapper{
+    &--menu{
+        max-width: $desktopSizeXL;
+    }
+}
 .main{    
     &--restaurant{
         padding: 1rem 1.5rem;
+        position: relative;
+        z-index: 20;
         margin-top: 13rem;
         background-color: darken($w, 5);
         border-radius: 2rem 2rem 0 0;
@@ -17,5 +24,17 @@
     &_submit{
         padding-bottom: 5rem;
         text-align: center;
+    }
+}
+@media screen and(min-width: $desktopSizeXL){
+    .main{
+        &--restaurant{
+            margin-top: initial;
+            border-radius: initial;
+            -webkit-border-radius: initial;
+            -moz-border-radius: initial;
+            -ms-border-radius: initial;
+            -o-border-radius: initial;
+}
     }
 }

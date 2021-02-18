@@ -1,0 +1,52 @@
+@media screen and (min-width: $tabSize){
+    .fonction{          
+        &_info{
+            &_number{
+                transition: transform 0.3s;
+                -webkit-transition: transform 0.3s;
+                -moz-transition: transform 0.3s;
+                -ms-transition: transform 0.3s;
+                -o-transition: transform 0.3s;
+}
+            &_title{
+                transition: color 0.3s, letter-spacing 0.3s;
+                -webkit-transition: color 0.3s, letter-spacing 0.3s;
+                -moz-transition: color 0.3s, letter-spacing 0.3s;
+                -ms-transition: color 0.3s, letter-spacing 0.3s;
+                -o-transition: color 0.3s, letter-spacing 0.3s;
+}
+            &_icone{
+                transition: color 0.3s, transform 0.3s;
+                -webkit-transition: color 0.3s, transform 0.3s;
+                -moz-transition: color 0.3s, transform 0.3s;
+                -ms-transition: color 0.3s, transform 0.3s;
+                -o-transition: color 0.3s, transform 0.3s;
+}
+            &:hover{          
+                .fonction{ 
+                    &_info{
+                        &_number{
+                            transform: rotate(45deg) scale(0.9);
+                            -webkit-transform: rotate(45deg) scale(0.9);
+                            -moz-transform: rotate(45deg) scale(0.9);
+                            -ms-transform: rotate(45deg) scale(0.9);
+                            -o-transform: rotate(45deg) scale(0.9);
+}
+                        &_title{
+                            color: lighten($b, 30);
+                            letter-spacing: 0.05rem;
+                        }
+                        &_icone{
+                            color: $primColor;
+                            transform:scale(1.1);
+                            -webkit-transform:scale(1.1);
+                            -moz-transform:scale(1.1);
+                            -ms-transform:scale(1.1);
+                            -o-transform:scale(1.1);
+}
+                    }
+                }
+            }            
+        }       
+    }
+}

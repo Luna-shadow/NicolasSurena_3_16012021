@@ -3,7 +3,6 @@
         position: fixed;
         height: 20rem;
         width: 100%;
-        z-index: -1;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: top;
@@ -22,11 +21,10 @@
         background-image: url("../medias/restaurants/folieMericourt.jpg");
     }
 }
-@media screen and(min-width: $desktopSize){
+@media screen and(min-width: $desktopSizeXL){
     .header{
         &--menu{
-            background-size: cover;
-            background-position: initial;
+            display: none;
         }
     }
 }

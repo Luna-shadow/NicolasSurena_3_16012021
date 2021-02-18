@@ -1,20 +1,28 @@
 .nav{
-    width: 100%;
+    &--menu{
+        display: grid;
+        grid-template-areas: 
+        "icone title .";
+    }
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 100;
     background-color: $w;
+    box-shadow: 0 0 0.5rem lighten($b, 20);
     &_title{
+        grid-area: title;
         font-size: 2rem;
         text-align: center;
         padding: 1rem;       
-        box-shadow: 0 0 0.5rem lighten($b, 20);
         font-family: 'Shrikhand', cursive, 'sans-serif';        
     }
     &_icone{
-        position: fixed; 
-        top: 1.3rem;
-        left: 1.5rem;   
+        &_link{
+            grid-area: icone;
+            align-self: center;
+        }  
         font-size: 1.5rem; 
+        margin-left: 1rem;
     }
 }

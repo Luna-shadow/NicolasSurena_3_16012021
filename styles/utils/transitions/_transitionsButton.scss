@@ -1,0 +1,12 @@
+.button{
+    &:hover{
+        padding: 1rem 4rem;
+        color: $w;
+        letter-spacing: 0.05rem;
+    }
+    transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
+    -webkit-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
+    -moz-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
+    -ms-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
+    -o-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
+}
