@@ -1247,8 +1247,8 @@ a {
 }
 
 .mainWrapper--menu {
-  animation: "unblur" 3s 0s forwards;
-  -webkit-animation: "unblur" 3s 0s forwards;
+  animation: "unblur" 2.5s 0s forwards;
+  -webkit-animation: "unblur" 2.5s 0s forwards;
 }
 
 @-webkit-keyframes flex {
@@ -1389,38 +1389,26 @@ a {
 @-webkit-keyframes dish {
   0% {
     opacity: 0;
-    transform: translateY(2rem);
-    -webkit-transform: translateY(2rem);
-    -moz-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
+    height: 5rem;
+    width: 60%;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
+    height: 14rem;
+    width: 100%;
   }
 }
 
 @keyframes dish {
   0% {
     opacity: 0;
-    transform: translateY(2rem);
-    -webkit-transform: translateY(2rem);
-    -moz-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
+    height: 5rem;
+    width: 60%;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
+    height: 14rem;
+    width: 100%;
   }
 }
 
@@ -1501,6 +1489,8 @@ a {
 
 .dish {
   opacity: 0;
+  height: 5rem;
+  width: 60%;
 }
 
 .dish:nth-of-type(1) {

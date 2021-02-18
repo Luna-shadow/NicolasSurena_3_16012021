@@ -131,9 +131,9 @@
         -webkit-animation: "unblur" 2s 2s forwards;
 }
     &--menu{
-        animation: "unblur" 3s 0s forwards;
-        -webkit-animation: "unblur" 3s 0s forwards;
-    }
+        animation: "unblur" 2.5s 0s forwards;
+        -webkit-animation: "unblur" 2.5s 0s forwards;
+}
     filter: blur(0.5em);
     -webkit-filter: blur(0.5em);
 }
