@@ -1386,7 +1386,33 @@ a {
   }
 }
 
-@-webkit-keyframes dish {
+@-webkit-keyframes dish--mobile {
+  0% {
+    opacity: 0;
+    height: 0rem;
+    width: 60%;
+  }
+  100% {
+    opacity: 1;
+    height: 5rem;
+    width: 100%;
+  }
+}
+
+@keyframes dish--mobile {
+  0% {
+    opacity: 0;
+    height: 0rem;
+    width: 60%;
+  }
+  100% {
+    opacity: 1;
+    height: 5rem;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes dish--tab {
   0% {
     opacity: 0;
     height: 5rem;
@@ -1399,7 +1425,7 @@ a {
   }
 }
 
-@keyframes dish {
+@keyframes dish--tab {
   0% {
     opacity: 0;
     height: 5rem;
@@ -1489,28 +1515,52 @@ a {
 
 .dish {
   opacity: 0;
-  height: 5rem;
+  height: 0rem;
   width: 60%;
 }
 
 .dish:nth-of-type(1) {
-  animation: "dish" 2s 0s forwards;
-  -webkit-animation: "dish" 2s 0s forwards;
+  animation: "dish--mobile" 2s 0s forwards;
+  -webkit-animation: "dish--mobile" 2s 0s forwards;
 }
 
 .dish:nth-of-type(2) {
-  animation: "dish" 2s 0.4s forwards;
-  -webkit-animation: "dish" 2s 0.4s forwards;
+  animation: "dish--mobile" 2s 0.4s forwards;
+  -webkit-animation: "dish--mobile" 2s 0.4s forwards;
 }
 
 .dish:nth-of-type(3) {
-  animation: "dish" 2s 0.8s forwards;
-  -webkit-animation: "dish" 2s 0.8s forwards;
+  animation: "dish--mobile" 2s 0.8s forwards;
+  -webkit-animation: "dish--mobile" 2s 0.8s forwards;
 }
 
 .dish:nth-of-type(4) {
-  animation: "dish" 2s  1s forwards;
-  -webkit-animation: "dish" 2s  1s forwards;
+  animation: "dish--mobile" 2s  1s forwards;
+  -webkit-animation: "dish--mobile" 2s  1s forwards;
+}
+
+@media screen and (min-width: 800px) {
+  .dish {
+    opacity: 0;
+    height: 5rem;
+    width: 60%;
+  }
+  .dish:nth-of-type(1) {
+    animation: "dish--tab" 2s 0s forwards;
+    -webkit-animation: "dish--tab" 2s 0s forwards;
+  }
+  .dish:nth-of-type(2) {
+    animation: "dish--tab" 2s 0.4s forwards;
+    -webkit-animation: "dish--tab" 2s 0.4s forwards;
+  }
+  .dish:nth-of-type(3) {
+    animation: "dish--tab" 2s 0.8s forwards;
+    -webkit-animation: "dish--tab" 2s 0.8s forwards;
+  }
+  .dish:nth-of-type(4) {
+    animation: "dish--tab" 2s  1s forwards;
+    -webkit-animation: "dish--tab" 2s  1s forwards;
+  }
 }
 
 .button {
