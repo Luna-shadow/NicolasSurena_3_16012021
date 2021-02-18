@@ -1492,18 +1492,18 @@ a {
 }
 
 .restaurantArea a:nth-of-type(2) {
-  animation: "apparition" 1.8s 1.4s forwards;
-  -webkit-animation: "apparition" 1.8s 1.4s forwards;
+  animation: "apparition" 1.8s 1.9s forwards;
+  -webkit-animation: "apparition" 1.8s 1.9s forwards;
 }
 
 .restaurantArea a:nth-of-type(3) {
-  animation: "apparition" 1.6s 1.6s forwards;
-  -webkit-animation: "apparition" 1.6s 1.6s forwards;
+  animation: "apparition" 1.6s 2.1s forwards;
+  -webkit-animation: "apparition" 1.6s 2.1s forwards;
 }
 
 .restaurantArea a:nth-of-type(4) {
-  animation: "apparition" 1.4s  1.8s forwards;
-  -webkit-animation: "apparition" 1.4s  1.8s forwards;
+  animation: "apparition" 1.4s  2.3s forwards;
+  -webkit-animation: "apparition" 1.4s  2.3s forwards;
 }
 
 .fonction_title,
