@@ -1242,8 +1242,8 @@ a {
 }
 
 .mainWrapper--home {
-  animation: "unblur" 2s 2s forwards;
-  -webkit-animation: "unblur" 2s 2s forwards;
+  animation: "unblur" 3s 1s forwards;
+  -webkit-animation: "unblur" 3s 1s forwards;
 }
 
 .mainWrapper--menu {
