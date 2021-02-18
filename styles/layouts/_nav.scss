@@ -8,11 +8,15 @@
     &--menu{
         display: grid;
         grid-template-areas: 
-        "icone title .";
+        "icone titleLink .";
+    }
+    &--home{
+        display: grid;
+        grid-template-areas: 
+        ". titleLink .";
     }
     &_title{
-        display: inline-block;
-        grid-area: title;
+        display: inline-block;       
         padding: 1rem;       
         position: relative;
         font-size: 2rem;
@@ -28,6 +32,7 @@
             border-top: 0.3rem solid $terColor;
         }     
         &_link{
+            grid-area: titleLink;
             justify-self: center;
         }  
     }

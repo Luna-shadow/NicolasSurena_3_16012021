@@ -3,10 +3,10 @@
         opacity: 0;
         width: 100%;
     }
-    10%{
+    20%{
         opacity: 1;
     }
-    90%{
+    70%{
         opacity: 1;
     }
     99%{
@@ -81,13 +81,60 @@
         transform: rotate(360deg);
     }
 }
-.loaderArea{
-    animation: 'open' 4s forwards;
-    -webkit-animation: 'open' 4s forwards;
+@keyframes unblur{
+    0%{
+        filter: blur(0.5rem);
+        -webkit-filter: blur(0.5rem);
 }
-
-.loader {
-    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    10%{
+        filter: blur(0.7rem);
+        -webkit-filter: blur(0.7rem);
+}
+    30%{
+        filter: blur(0.2rem);
+        -webkit-filter: blur(0.2rem);
+}
+    50%{
+        filter: blur(0.4rem);
+        -webkit-filter: blur(0.4rem);
+}
+    100%{
+        filter: blur(0);
+        -webkit-filter: blur(0);
+}
+}
+.body{
+    &--home{
+        .loaderArea{
+            animation: 'open' 5s forwards;
+            -webkit-animation: 'open' 5s forwards;
+}
+        .loader {
+            -webkit-animation: load6 1.7s 6 ease, round 1.7s 6 ease;
+            animation: load6 1.7s 6 ease, round 1.7s 6 ease;
+        }
+    }
+    &--menu{
+        .loaderArea{
+            animation: 'open' 2.5s forwards;
+            -webkit-animation: 'open' 2.5s forwards;
+}
+        .loader {
+            -webkit-animation: load6 1.7s 3 ease, round 1.7s 6 ease;
+            animation: load6 1.7s 6 ease, round 1.7s 6 ease;
+        }
+    }
+}
+.mainWrapper{
+    &--home{
+        animation: "unblur" 2s 2s forwards;
+        -webkit-animation: "unblur" 2s 2s forwards;
+}
+    &--menu{
+        animation: "unblur" 3s 0s forwards;
+        -webkit-animation: "unblur" 3s 0s forwards;
+    }
+    filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
 }
   
