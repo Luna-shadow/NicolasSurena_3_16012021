@@ -39,21 +39,28 @@
     -o-transition: grid-template-columns 0.5s;
 }
 @media screen and (min-width: $tabSize){
+    .menu{
+        &_icone{
+            &:hover{
+                color: $secColor;
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+}
+            transition: color 0.2s, transform 0.2s;
+            -webkit-transition: color 0.2s, transform 0.2s;
+            -moz-transition: color 0.2s, transform 0.2s;
+            -ms-transition: color 0.2s, transform 0.2s;
+            -o-transition: color 0.2s, transform 0.2s;
+}
+    }
     .dish{
-        &_title{
-        }
-        &_checkArea{
-            &_check{           
-            }       
-        }
         &:hover{ 
             grid-template-columns: auto auto;
             grid-template-rows: 50% 20% auto 2rem;
             .dish{
-                &_checkArea{
-                    &_check{
-                    }
-                }
                 &_title{
                     letter-spacing: initial;
                 }

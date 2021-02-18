@@ -1,21 +1,35 @@
 .nav{
-    &--menu{
-        display: grid;
-        grid-template-areas: 
-        "icone title .";
-    }
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
     background-color: $w;
     box-shadow: 0 0 0.5rem lighten($b, 20);
+    &--menu{
+        display: grid;
+        grid-template-areas: 
+        "icone title .";
+    }
     &_title{
+        display: inline-block;
         grid-area: title;
+        padding: 1rem;       
+        position: relative;
         font-size: 2rem;
         text-align: center;
-        padding: 1rem;       
-        font-family: 'Shrikhand', cursive, 'sans-serif';        
+        font-family: 'Shrikhand', cursive, 'sans-serif'; 
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            z-index: -1;
+            border-top: 0.3rem solid $terColor;
+        }     
+        &_link{
+            justify-self: center;
+        }  
     }
     &_icone{
         &_link{
