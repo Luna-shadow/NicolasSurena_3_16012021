@@ -1519,22 +1519,22 @@ a {
   width: 60%;
 }
 
-.dish:nth-of-type(1) {
-  animation: "dish--mobile" 2s 0s forwards;
-  -webkit-animation: "dish--mobile" 2s 0s forwards;
-}
-
-.dish:nth-of-type(2) {
+.dish:nth-of-type(4n+1) {
   animation: "dish--mobile" 2s 0.4s forwards;
   -webkit-animation: "dish--mobile" 2s 0.4s forwards;
 }
 
-.dish:nth-of-type(3) {
+.dish:nth-of-type(4n+2) {
+  animation: "dish--mobile" 2s 0.6s forwards;
+  -webkit-animation: "dish--mobile" 2s 0.6s forwards;
+}
+
+.dish:nth-of-type(4n+3) {
   animation: "dish--mobile" 2s 0.8s forwards;
   -webkit-animation: "dish--mobile" 2s 0.8s forwards;
 }
 
-.dish:nth-of-type(4) {
+.dish:nth-of-type(4n+4) {
   animation: "dish--mobile" 2s  1s forwards;
   -webkit-animation: "dish--mobile" 2s  1s forwards;
 }
@@ -1545,34 +1545,36 @@ a {
     height: 5rem;
     width: 60%;
   }
-  .dish:nth-of-type(1) {
-    animation: "dish--tab" 2s 0s forwards;
-    -webkit-animation: "dish--tab" 2s 0s forwards;
-  }
-  .dish:nth-of-type(2) {
+  .dish:nth-of-type(4n+1) {
     animation: "dish--tab" 2s 0.4s forwards;
     -webkit-animation: "dish--tab" 2s 0.4s forwards;
   }
-  .dish:nth-of-type(3) {
+  .dish:nth-of-type(4n+2) {
+    animation: "dish--tab" 2s 0.6s forwards;
+    -webkit-animation: "dish--tab" 2s 0.6s forwards;
+  }
+  .dish:nth-of-type(4n+3) {
     animation: "dish--tab" 2s 0.8s forwards;
     -webkit-animation: "dish--tab" 2s 0.8s forwards;
   }
-  .dish:nth-of-type(4) {
+  .dish:nth-of-type(4n+4) {
     animation: "dish--tab" 2s  1s forwards;
     -webkit-animation: "dish--tab" 2s  1s forwards;
   }
 }
 
 .button {
-  transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
-  -webkit-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
-  -moz-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
-  -ms-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
-  -o-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s;
+  transition: padding 0.3s, color 0.5s, letter-spacing 0.5s, background-image 0.5s;
+  -webkit-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s, background-image 0.5s;
+  -moz-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s, background-image 0.5s;
+  -ms-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s, background-image 0.5s;
+  -o-transition: padding 0.3s, color 0.5s, letter-spacing 0.5s, background-image 0.5s;
 }
 
 .button:hover {
   padding: 1rem 4rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ad80e5));
+  background-image: linear-gradient(#fface8, #ad80e5);
   color: #ffffff;
   letter-spacing: 0.05rem;
 }
