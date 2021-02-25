@@ -13,13 +13,13 @@
             -moz-transition: transform 0.5s;
             -ms-transition: transform 0.5s;
             -o-transition: transform 0.5s;
-        }      
+        }
         transition: width 0.5s;
         -webkit-transition: width 0.5s;
         -moz-transition: width 0.5s;
         -ms-transition: width 0.5s;
-        -o-transition: width 0.5s; 
-    }
+        -o-transition: width 0.5s;
+}
     &:hover{ 
         .dish{
             &_checkArea{
@@ -56,14 +56,7 @@
             -o-transition: color 0.2s, transform 0.2s;
 }
     }
-    .dish{
-        &_checkArea{
-            transition: height 0.5s;
-            -webkit-transition: height 0.5s;
-            -moz-transition: height 0.5s;
-            -ms-transition: height 0.5s;
-            -o-transition: height 0.5s;
-}
+    .dish{       
         &:hover{ 
             grid-template-columns: auto auto;
             .dish{
@@ -81,12 +74,17 @@
             -ms-transform: rotate(-2deg);
             -o-transform: rotate(-2deg);
         }
-
-     
+        &_checkArea{
+            transition: height 0.5s;
+            -webkit-transition: height 0.5s;
+            -moz-transition: height 0.5s;
+            -ms-transition: height 0.5s;
+            -o-transition: height 0.5s;
+        }
         transition: transform 0.3s;
         -webkit-transition: transform 0.3s;
         -moz-transition: transform 0.3s;
         -ms-transition: transform 0.3s;
         -o-transition: transform 0.3s;
-    }
+}
 }

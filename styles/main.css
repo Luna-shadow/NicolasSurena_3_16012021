@@ -1322,13 +1322,6 @@ a {
     -ms-transition: transform 0.3s;
     -o-transition: transform 0.3s;
   }
-  .dish_checkArea {
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
-    -o-transition: height 0.5s;
-  }
   .dish:hover {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
@@ -1344,6 +1337,13 @@ a {
   .dish:hover .dish_checkArea {
     width: initial;
     height: 2rem;
+  }
+  .dish_checkArea {
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
   }
 }
 
