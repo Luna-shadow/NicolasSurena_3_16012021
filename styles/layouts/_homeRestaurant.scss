@@ -3,7 +3,7 @@
     padding: 1.5rem 1.5rem;
     &_title{
         text-align: left;
-        margin: 1rem 0 2rem;
+        margin: 1rem 0;
         font-size: 1.5rem;
         font-weight: 600;
     }
@@ -111,14 +111,22 @@
 }
     }
     &_icone{
+        align-self: start;
         grid-area: icone;
         font-size: 1.2rem;
+        -webkit-text-stroke: 0.1rem $b;
+        -webkit-text-fill-color: $w;
+        color: $wo;
+        position: relative;
+        z-index: 1;
+       
         &--selected{
             background: linear-gradient($primColor, $secColor);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            color: $primColor;
+            -webkit-text-stroke: initial;
         }
+       
     }  
     &_menilmontant{
         background-image: url('../medias/restaurants/melimontant.jpg');

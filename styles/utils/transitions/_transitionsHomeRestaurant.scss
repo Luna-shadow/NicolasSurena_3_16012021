@@ -2,17 +2,16 @@
     &_icone{
         &:hover{
             background: linear-gradient($primColor, $secColor);
+            -webkit-text-stroke: initial;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: $primColor;
+            -webkit-text-fill-color: transparent;     
         }
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-       
-    }
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+}
 }
 @media screen and (min-width: $tabSize){
     .restaurantArea{
@@ -39,15 +38,16 @@
                     }
                     &_icone{
                         font-size: 1.5rem;
+                        -webkit-text-stroke: initial;
                     }
                 }
             }
-            transition: background-size 0.5s;
-            -webkit-transition: background-size 0.5s;
-            -moz-transition: background-size 0.5s;
-            -ms-transition: background-size 0.5s;
-            -o-transition: background-size 0.5s;
-        }
+            transition: background-size 0.5s, text-stroke 0.5s;
+            -webkit-transition: background-size 0.5s, text-stroke 0.5s;
+            -moz-transition: background-size 0.5s, text-stroke 0.5s;
+            -ms-transition: background-size 0.5s, text-stroke 0.5s;
+            -o-transition: background-size 0.5s, text-stroke 0.5s;
+}
         & .restaurant{
             &_content{
                 transition: background-color 0.4s, padding-bottom 0.4s, color 0.3s, font-size 0.3s;
