@@ -56,9 +56,15 @@
             -o-transition: color 0.2s, transform 0.2s;
 }
     }
-    .dish{    
+    .dish{
+        &_checkArea{
+            transition: height 0.5s;
+            -webkit-transition: height 0.5s;
+            -moz-transition: height 0.5s;
+            -ms-transition: height 0.5s;
+            -o-transition: height 0.5s;
+}       
         &:hover{ 
-            grid-template-columns: auto auto;
             .dish{
                 &_title{
                     letter-spacing: initial;
@@ -66,7 +72,6 @@
                 &_checkArea{
                     width: initial;
                     height: 2rem;
-                    transition: height 0.5s;
                 }
             }
             transform: rotate(-2deg);

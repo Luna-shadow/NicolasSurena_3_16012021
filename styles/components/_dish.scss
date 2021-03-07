@@ -1,9 +1,9 @@
 .dish{
     display: grid;
-    grid-template-columns: 1rem 2fr 2fr 1rem auto;
+    grid-template-columns: 1rem 2fr 2fr 2rem 1rem auto;
     grid-template-areas:
-    ". title title . checkArea"
-    ". recipe price . checkArea";
+    ". title title . .checkArea"
+    ". recipe recipe price .checkArea";
     align-items: center;
     height: 5rem;
     margin: 1rem auto;
@@ -58,13 +58,13 @@
         &_check{
             color: $w;
             font-size: 1.5rem;
-        }      
-    }
+        }
+}
 }
 @media screen and (min-width: $tabSize){
     .dish{
         grid-template-columns: auto auto;
-        grid-template-rows: 50% 20% auto auto;
+        grid-template-rows: 50% auto auto auto ;
         grid-template-areas:
         "title title"
         "recipe recipe"
@@ -75,6 +75,7 @@
         margin: initial;
         &_title{
             grid-area: title;
+            white-space: initial;
             word-wrap: none;
             padding: 1rem;
             position: relative;
@@ -121,12 +122,13 @@
             align-self: end;
             justify-self: stretch;
             overflow: hidden;
-            height: 0;
+            height: 0rem;
             border-radius: 0 0 1rem 1rem;
             -webkit-border-radius: 0 0 1rem 1rem;
             -moz-border-radius: 0 0 1rem 1rem;
             -ms-border-radius: 0 0 1rem 1rem;
-            -o-border-radius: 0 0 1rem 1rem;    
-        }
+            -o-border-radius: 0 0 1rem 1rem;
+  
+}
     }
 }
