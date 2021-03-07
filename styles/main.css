@@ -1237,8 +1237,8 @@ a {
 }
 
 .body--home .loaderArea {
-  animation: 'open' 5s forwards;
-  -webkit-animation: 'open' 5s forwards;
+  animation: open 5s forwards;
+  -webkit-animation: open 5s forwards;
 }
 
 .body--home .loader {
@@ -1247,8 +1247,8 @@ a {
 }
 
 .body--menu .loaderArea {
-  animation: 'open' 2.5s forwards;
-  -webkit-animation: 'open' 2.5s forwards;
+  animation: open 2.5s forwards;
+  -webkit-animation: open 2.5s forwards;
 }
 
 .body--menu .loader {
@@ -1262,13 +1262,13 @@ a {
 }
 
 .mainWrapper--home {
-  animation: "unblur" 3s 1s forwards;
-  -webkit-animation: "unblur" 3s 1s forwards;
+  animation: unblur 3s 1s forwards;
+  -webkit-animation: unblur 3s 1s forwards;
 }
 
 .mainWrapper--menu {
-  animation: "unblur" 2.5s 0s forwards;
-  -webkit-animation: "unblur" 2.5s 0s forwards;
+  animation: unblur 2.5s 0s forwards;
+  -webkit-animation: unblur 2.5s 0s forwards;
 }
 
 @-webkit-keyframes flex {
@@ -1349,8 +1349,8 @@ a {
 
 .header {
   opacity: 0;
-  animation: 'flex' 2s 1s forwards;
-  -webkit-animation: 'flex' 2s 1s forwards;
+  animation: flex 2s 1s forwards;
+  -webkit-animation: flex 2s 1s forwards;
 }
 
 .header > * {
@@ -1359,13 +1359,13 @@ a {
 
 .header_title, .header_catchphrase,
 .header .button {
-  animation: 'flex' 2s 2.5s forwards;
-  -webkit-animation: 'flex' 2s 2.5s forwards;
+  animation: flex 2s 2.5s forwards;
+  -webkit-animation: flex 2s 2.5s forwards;
 }
 
 .header_location {
-  animation: 'location' 2s 2.5s forwards;
-  -webkit-animation: 'location' 2s 2.5s forwards;
+  animation: location 2s 2.5s forwards;
+  -webkit-animation: location 2s 2.5s forwards;
 }
 
 @-webkit-keyframes apparition {
@@ -1498,8 +1498,8 @@ a {
 
 .restaurantArea_title {
   opacity: 0;
-  animation: "unzoom" 3s 1s forwards;
-  -webkit-animation: "unzoom" 3s 1s forwards;
+  animation: unzoom 3s 1s forwards;
+  -webkit-animation: unzoom 3s 1s forwards;
 }
 
 .restaurantArea a {
@@ -1507,30 +1507,30 @@ a {
 }
 
 .restaurantArea a:nth-of-type(1) {
-  animation: "apparition" 2s 1.7s forwards;
-  -webkit-animation: "apparition" 2s 1.7s forwards;
+  animation: apparition 2s 1.7s forwards;
+  -webkit-animation: apparition 2s 1.7s forwards;
 }
 
 .restaurantArea a:nth-of-type(2) {
-  animation: "apparition" 1.8s 1.9s forwards;
-  -webkit-animation: "apparition" 1.8s 1.9s forwards;
+  animation: apparition 1.8s 1.9s forwards;
+  -webkit-animation: apparition 1.8s 1.9s forwards;
 }
 
 .restaurantArea a:nth-of-type(3) {
-  animation: "apparition" 1.6s 2.1s forwards;
-  -webkit-animation: "apparition" 1.6s 2.1s forwards;
+  animation: apparition 1.6s 2.1s forwards;
+  -webkit-animation: apparition 1.6s 2.1s forwards;
 }
 
 .restaurantArea a:nth-of-type(4) {
-  animation: "apparition" 1.4s  2.3s forwards;
-  -webkit-animation: "apparition" 1.4s  2.3s forwards;
+  animation: apparition 1.4s  2.3s forwards;
+  -webkit-animation: apparition 1.4s  2.3s forwards;
 }
 
 .fonction_title,
 .fonction article {
   opacity: 0;
-  animation: "apparition" 2s 1.5s forwards;
-  -webkit-animation: "apparition" 2s 1.5s forwards;
+  animation: apparition 2s 1.5s forwards;
+  -webkit-animation: apparition 2s 1.5s forwards;
 }
 
 .dish {
@@ -1540,23 +1540,23 @@ a {
 }
 
 .dish:nth-of-type(4n+1) {
-  animation: "dish--mobile" 2s 0.4s forwards;
-  -webkit-animation: "dish--mobile" 2s 0.4s forwards;
+  animation: dish--mobile 2s 0.4s forwards;
+  -webkit-animation: dish--mobile 2s 0.4s forwards;
 }
 
 .dish:nth-of-type(4n+2) {
-  animation: "dish--mobile" 2s 0.6s forwards;
-  -webkit-animation: "dish--mobile" 2s 0.6s forwards;
+  animation: dish--mobile 2s 0.6s forwards;
+  -webkit-animation: dish--mobile 2s 0.6s forwards;
 }
 
 .dish:nth-of-type(4n+3) {
-  animation: "dish--mobile" 2s 0.8s forwards;
-  -webkit-animation: "dish--mobile" 2s 0.8s forwards;
+  animation: dish--mobile 2s 0.8s forwards;
+  -webkit-animation: dish--mobile 2s 0.8s forwards;
 }
 
 .dish:nth-of-type(4n+4) {
-  animation: "dish--mobile" 2s  1s forwards;
-  -webkit-animation: "dish--mobile" 2s  1s forwards;
+  animation: dish--mobile 2s  1s forwards;
+  -webkit-animation: dish--mobile 2s  1s forwards;
 }
 
 @media screen and (min-width: 800px) {
@@ -1566,20 +1566,20 @@ a {
     width: 60%;
   }
   .dish:nth-of-type(4n+1) {
-    animation: "dish--tab" 2s 0.4s forwards;
-    -webkit-animation: "dish--tab" 2s 0.4s forwards;
+    animation: dish--tab 2s 0.4s forwards;
+    -webkit-animation: dish--tab 2s 0.4s forwards;
   }
   .dish:nth-of-type(4n+2) {
-    animation: "dish--tab" 2s 0.6s forwards;
-    -webkit-animation: "dish--tab" 2s 0.6s forwards;
+    animation: dish--tab 2s 0.6s forwards;
+    -webkit-animation: dish--tab 2s 0.6s forwards;
   }
   .dish:nth-of-type(4n+3) {
-    animation: "dish--tab" 2s 0.8s forwards;
-    -webkit-animation: "dish--tab" 2s 0.8s forwards;
+    animation: dish--tab 2s 0.8s forwards;
+    -webkit-animation: dish--tab 2s 0.8s forwards;
   }
   .dish:nth-of-type(4n+4) {
-    animation: "dish--tab" 2s  1s forwards;
-    -webkit-animation: "dish--tab" 2s  1s forwards;
+    animation: dish--tab 2s  1s forwards;
+    -webkit-animation: dish--tab 2s  1s forwards;
   }
 }
 

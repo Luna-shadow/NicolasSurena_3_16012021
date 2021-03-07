@@ -43,13 +43,13 @@
     &_title,
     &_catchphrase,
     .button{
-        animation: 'flex' 2s 2.5s forwards;
-        -webkit-animation: 'flex' 2s 2.5s forwards;
+        animation: flex 2s 2.5s forwards;
+        -webkit-animation: flex 2s 2.5s forwards;
 }
     &_location{
-        animation: 'location' 2s 2.5s forwards;
-        -webkit-animation: 'location' 2s 2.5s forwards;
+        animation: location 2s 2.5s forwards;
+        -webkit-animation: location 2s 2.5s forwards;
 }
-    animation: 'flex' 2s 1s forwards;
-    -webkit-animation: 'flex' 2s 1s forwards;
+    animation: flex 2s 1s forwards;
+    -webkit-animation: flex 2s 1s forwards;
 }

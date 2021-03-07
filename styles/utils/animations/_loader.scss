@@ -106,8 +106,8 @@
 .body{
     &--home{
         .loaderArea{
-            animation: 'open' 5s forwards;
-            -webkit-animation: 'open' 5s forwards;
+            animation: open 5s forwards;
+            -webkit-animation: open 5s forwards;
 }
         .loader {
             -webkit-animation: load6 1.7s 6 ease, round 1.7s 6 ease;
@@ -116,8 +116,8 @@
     }
     &--menu{
         .loaderArea{
-            animation: 'open' 2.5s forwards;
-            -webkit-animation: 'open' 2.5s forwards;
+            animation: open 2.5s forwards;
+            -webkit-animation: open 2.5s forwards;
 }
         .loader {
             -webkit-animation: load6 1.7s 3 ease, round 1.7s 6 ease;
@@ -127,12 +127,12 @@
 }
 .mainWrapper{
     &--home{
-        animation: "unblur" 3s 1s forwards;
-        -webkit-animation: "unblur" 3s 1s forwards;
+        animation: unblur 3s 1s forwards;
+        -webkit-animation: unblur 3s 1s forwards;
 }
     &--menu{
-        animation: "unblur" 2.5s 0s forwards;
-        -webkit-animation: "unblur" 2.5s 0s forwards;
+        animation: unblur 2.5s 0s forwards;
+        -webkit-animation: unblur 2.5s 0s forwards;
 }
     filter: blur(0.5em);
     -webkit-filter: blur(0.5em);
