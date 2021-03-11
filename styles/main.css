@@ -104,7 +104,10 @@ a {
     display: grid;
     -ms-grid-columns: auto 50rem 25rem auto;
         grid-template-columns: auto 50rem 25rem auto;
-        grid-template-areas: "nav nav nav nav" "header header header header" ". restaurantWrapper fonction ." "footer footer footer footer";
+        grid-template-areas: "nav nav nav nav"
+ "header header header header"
+ ". restaurantWrapper fonction ."
+ "footer footer footer footer";
     -webkit-transition: -webkit-transform 2s;
     transition: -webkit-transform 2s;
     transition: transform 2s;
@@ -285,8 +288,7 @@ a {
     display: -ms-grid;
     display: grid;
     grid-gap: 1rem;
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
     justify-items: center;
     max-width: 50rem;
     margin: 2rem auto;
@@ -346,7 +348,9 @@ a {
   .header--home {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "title location" "catchphrase location" "button location";
+        grid-template-areas: "title location"
+ "catchphrase location"
+ "button location";
     -ms-grid-columns: auto 20rem;
         grid-template-columns: auto 20rem;
     padding-bottom: initial;
@@ -496,8 +500,7 @@ a {
   .fonction {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 2rem;
   }
   .fonction_info {
@@ -572,11 +575,11 @@ a {
 .restaurant_novelty--hide {
   visibility: hidden;
 }
-
 .restaurant_content {
   display: -ms-grid;
   display: grid;
-  grid-template: "title icone" "location icone";
+  grid-template: "title icone"
+ "location icone";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -688,8 +691,7 @@ a {
   .restaurantArea {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     background-color: #ffffff;
     padding-bottom: 3rem;
@@ -748,8 +750,7 @@ a {
   .dishArea {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     margin: 2rem auto;
     max-width: 70rem;
@@ -858,7 +859,8 @@ a {
   display: grid;
   -ms-grid-columns: 1rem 2fr 2fr 2rem 1rem auto;
       grid-template-columns: 1rem 2fr 2fr 2rem 1rem auto;
-      grid-template-areas: ". title title . .checkArea" ". recipe recipe price .checkArea";
+      grid-template-areas: ". title title . .checkArea"
+ ". recipe recipe price .checkArea";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -949,7 +951,10 @@ a {
         grid-template-columns: auto auto;
     -ms-grid-rows: 50% auto auto auto;
         grid-template-rows: 50% auto auto auto;
-        grid-template-areas: "title title" "recipe recipe" "price price" "checkArea checkArea";
+        grid-template-areas: "title title"
+ "recipe recipe"
+ "price price"
+ "checkArea checkArea";
     border-bottom: 0.2rem solid #9256dc;
     height: 14rem;
     margin: initial;
@@ -960,7 +965,6 @@ a {
     -ms-grid-column-span: 2;
     grid-area: title;
     white-space: initial;
-    word-wrap: none;
     padding: 1rem;
     position: relative;
     z-index: 1;
@@ -970,7 +974,6 @@ a {
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
     -moz-text-decoration-style: dotted;
-    text-decoration-thickness: 0.1rem;
     -webkit-text-decoration-color: #9256dc;
             text-decoration-color: #9256dc;
     -moz-text-decoration-color: #9256dc;
@@ -1090,429 +1093,6 @@ a {
 
 .loader:after {
   left: 1.5em;
-}
-
-@-webkit-keyframes open {
-  0% {
-    opacity: 0;
-    width: 100%;
-  }
-  20% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  99% {
-    width: 100%;
-  }
-  100% {
-    opacity: 0;
-    width: 0;
-  }
-}
-
-@keyframes open {
-  0% {
-    opacity: 0;
-    width: 100%;
-  }
-  20% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  99% {
-    width: 100%;
-  }
-  100% {
-    opacity: 0;
-    width: 0;
-  }
-}
-
-@-webkit-keyframes unblur {
-  0% {
-    filter: blur(0.5rem);
-    -webkit-filter: blur(0.5rem);
-  }
-  10% {
-    filter: blur(0.7rem);
-    -webkit-filter: blur(0.7rem);
-  }
-  30% {
-    filter: blur(0.2rem);
-    -webkit-filter: blur(0.2rem);
-  }
-  50% {
-    filter: blur(0.4rem);
-    -webkit-filter: blur(0.4rem);
-  }
-  100% {
-    filter: blur(0);
-    -webkit-filter: blur(0);
-  }
-}
-
-@keyframes unblur {
-  0% {
-    filter: blur(0.5rem);
-    -webkit-filter: blur(0.5rem);
-  }
-  10% {
-    filter: blur(0.7rem);
-    -webkit-filter: blur(0.7rem);
-  }
-  30% {
-    filter: blur(0.2rem);
-    -webkit-filter: blur(0.2rem);
-  }
-  50% {
-    filter: blur(0.4rem);
-    -webkit-filter: blur(0.4rem);
-  }
-  100% {
-    filter: blur(0);
-    -webkit-filter: blur(0);
-  }
-}
-
-.body--home .loaderArea {
-  animation: open 5s forwards;
-  -webkit-animation: open 5s forwards;
-}
-
-.body--menu .loaderArea {
-  animation: open 2.5s forwards;
-  -webkit-animation: open 2.5s forwards;
-}
-
-.mainWrapper {
-  filter: blur(0.5em);
-  -webkit-filter: blur(0.5em);
-}
-
-.mainWrapper--home {
-  animation: unblur 3s 1s forwards;
-  -webkit-animation: unblur 3s 1s forwards;
-}
-
-.mainWrapper--menu {
-  animation: unblur 2.5s 0s forwards;
-  -webkit-animation: unblur 2.5s 0s forwards;
-}
-
-@-webkit-keyframes flex {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 1);
-    -webkit-transform: scale(0.5, 1);
-    -moz-transform: scale(0.5, 1);
-    -ms-transform: scale(0.5, 1);
-    -o-transform: scale(0.5, 1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-  }
-}
-
-@keyframes flex {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 1);
-    -webkit-transform: scale(0.5, 1);
-    -moz-transform: scale(0.5, 1);
-    -ms-transform: scale(0.5, 1);
-    -o-transform: scale(0.5, 1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-  }
-}
-
-@-webkit-keyframes location {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-    -webkit-transform: translateX(-10rem);
-    -moz-transform: translateX(-10rem);
-    -ms-transform: translateX(-10rem);
-    -o-transform: translateX(-10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
-}
-
-@keyframes location {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-    -webkit-transform: translateX(-10rem);
-    -moz-transform: translateX(-10rem);
-    -ms-transform: translateX(-10rem);
-    -o-transform: translateX(-10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
-}
-
-.header {
-  opacity: 0;
-  animation: flex 2s 1s forwards;
-  -webkit-animation: flex 2s 1s forwards;
-}
-
-.header > * {
-  opacity: 0;
-}
-
-.header_title, .header_catchphrase,
-.header .button {
-  animation: flex 2s 2.5s forwards;
-  -webkit-animation: flex 2s 2.5s forwards;
-}
-
-.header_location {
-  animation: location 2s 2.5s forwards;
-  -webkit-animation: location 2s 2.5s forwards;
-}
-
-@-webkit-keyframes apparition {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-    -webkit-transform: translateY(10rem);
-    -moz-transform: translateY(10rem);
-    -ms-transform: translateY(10rem);
-    -o-transform: translateY(10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-  }
-}
-
-@keyframes apparition {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-    -webkit-transform: translateY(10rem);
-    -moz-transform: translateY(10rem);
-    -ms-transform: translateY(10rem);
-    -o-transform: translateY(10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes dish--mobile {
-  0% {
-    opacity: 0;
-    height: 0rem;
-    width: 60%;
-  }
-  100% {
-    opacity: 1;
-    height: 5rem;
-    width: 100%;
-  }
-}
-
-@keyframes dish--mobile {
-  0% {
-    opacity: 0;
-    height: 0rem;
-    width: 60%;
-  }
-  100% {
-    opacity: 1;
-    height: 5rem;
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes dish--tab {
-  0% {
-    opacity: 0;
-    height: 5rem;
-    width: 60%;
-  }
-  100% {
-    opacity: 1;
-    height: 14rem;
-    width: 100%;
-  }
-}
-
-@keyframes dish--tab {
-  0% {
-    opacity: 0;
-    height: 5rem;
-    width: 60%;
-  }
-  100% {
-    opacity: 1;
-    height: 14rem;
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes unzoom {
-  0% {
-    opacity: 0;
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-}
-
-@keyframes unzoom {
-  0% {
-    opacity: 0;
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-}
-
-.restaurantArea_title {
-  opacity: 0;
-  animation: unzoom 3s 1s forwards;
-  -webkit-animation: unzoom 3s 1s forwards;
-}
-
-.restaurantArea a {
-  opacity: 0;
-}
-
-.restaurantArea a:nth-of-type(1) {
-  animation: apparition 2s 1.7s forwards;
-  -webkit-animation: apparition 2s 1.7s forwards;
-}
-
-.restaurantArea a:nth-of-type(2) {
-  animation: apparition 1.8s 1.9s forwards;
-  -webkit-animation: apparition 1.8s 1.9s forwards;
-}
-
-.restaurantArea a:nth-of-type(3) {
-  animation: apparition 1.6s 2.1s forwards;
-  -webkit-animation: apparition 1.6s 2.1s forwards;
-}
-
-.restaurantArea a:nth-of-type(4) {
-  animation: apparition 1.4s  2.3s forwards;
-  -webkit-animation: apparition 1.4s  2.3s forwards;
-}
-
-.fonction_title,
-.fonction article {
-  opacity: 0;
-  animation: apparition 2s 1.5s forwards;
-  -webkit-animation: apparition 2s 1.5s forwards;
-}
-
-.dish {
-  opacity: 0;
-  height: 0rem;
-  width: 60%;
-}
-
-.dish:nth-of-type(4n+1) {
-  animation: dish--mobile 2s 0.4s forwards;
-  -webkit-animation: dish--mobile 2s 0.4s forwards;
-}
-
-.dish:nth-of-type(4n+2) {
-  animation: dish--mobile 2s 0.6s forwards;
-  -webkit-animation: dish--mobile 2s 0.6s forwards;
-}
-
-.dish:nth-of-type(4n+3) {
-  animation: dish--mobile 2s 0.8s forwards;
-  -webkit-animation: dish--mobile 2s 0.8s forwards;
-}
-
-.dish:nth-of-type(4n+4) {
-  animation: dish--mobile 2s  1s forwards;
-  -webkit-animation: dish--mobile 2s  1s forwards;
-}
-
-@media screen and (min-width: 800px) {
-  .dish {
-    opacity: 0;
-    height: 5rem;
-    width: 60%;
-  }
-  .dish:nth-of-type(4n+1) {
-    animation: dish--tab 2s 0.4s forwards;
-    -webkit-animation: dish--tab 2s 0.4s forwards;
-  }
-  .dish:nth-of-type(4n+2) {
-    animation: dish--tab 2s 0.6s forwards;
-    -webkit-animation: dish--tab 2s 0.6s forwards;
-  }
-  .dish:nth-of-type(4n+3) {
-    animation: dish--tab 2s 0.8s forwards;
-    -webkit-animation: dish--tab 2s 0.8s forwards;
-  }
-  .dish:nth-of-type(4n+4) {
-    animation: dish--tab 2s  1s forwards;
-    -webkit-animation: dish--tab 2s  1s forwards;
-  }
 }
 
 .button {
@@ -1640,11 +1220,8 @@ a {
 .restaurant_icone:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff79da));
   background: linear-gradient(#9256dc, #ff79da);
-  text-stroke: initial;
   -webkit-text-stroke: initial;
-  background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: #ffffff00;
   -webkit-text-fill-color: transparent;
 }
 

@@ -76,7 +76,6 @@
         &_title{
             grid-area: title;
             white-space: initial;
-            word-wrap: none;
             padding: 1rem;
             position: relative;
             z-index: 1;
@@ -84,8 +83,7 @@
             font-weight: 400;
             text-decoration: underline;
             text-decoration-style: dotted;
-            -moz-text-decoration-style: dotted;
-            text-decoration-thickness: 0.1rem;
+            -moz-text-decoration-style: dotted;            
             text-decoration-color: $primColor;
             -moz-text-decoration-color: $primColor;
 }

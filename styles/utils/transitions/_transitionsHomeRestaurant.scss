@@ -2,11 +2,8 @@
     &_icone{
         &:hover{
             background: linear-gradient($primColor, $secColor);
-            text-stroke: initial;
             -webkit-text-stroke: initial;
-            background-clip: text;
-            -webkit-background-clip: text;
-            text-fill-color: $wo; 
+            -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;     
         }
         transition: all 0.5s;
