@@ -123,7 +123,7 @@
         &--selected{
             background: linear-gradient($primColor, $secColor);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: $wo;
             -webkit-text-stroke: initial;
         }
        
